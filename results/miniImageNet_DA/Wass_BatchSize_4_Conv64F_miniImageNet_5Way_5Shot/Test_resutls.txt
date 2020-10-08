@@ -1,0 +1,67 @@
+========================================== Start Test ==========================================
+
+=> loading checkpoint './results/miniImageNet_FixBN_Final/Wass_BatchSize_4_Conv64F_miniImageNet_5Way_5Shot/model_best.pth.tar'
+=> loaded checkpoint './results/miniImageNet_FixBN_Final/Wass_BatchSize_4_Conv64F_miniImageNet_5Way_5Shot/model_best.pth.tar' (epoch 45)
+Namespace(adam=True, augment=True, basemodel='Conv64F', beta1=0.5, clamp_lower=-0.01, clamp_upper=0.01, cosine=False, cuda=True, current_epoch=49, data_name='miniImageNet', dataset_dir='/home/liwenbin/Datasets/miniImageNet--ravi', episodeSize=4, episode_test_num=1000, episode_train_num=10000, episode_val_num=3000, epochs=50, imageSize=84, lr=0.001, method_name='Wass', mode='train', nc=3, neighbor_k=1, ngpu=1, outf='./results/miniImageNet_FixBN_Final/Wass_BatchSize_4_Conv64F_miniImageNet_5Way_5Shot', print_freq=50, query_num=15, resume='', shot_num=5, start_epoch=0, testepisodeSize=4, way_num=5, workers=8)
+FourLayer_64F(
+  (features): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): LeakyReLU(negative_slope=0.2, inplace=True)
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (4): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (5): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): LeakyReLU(negative_slope=0.2, inplace=True)
+    (7): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (8): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (9): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): LeakyReLU(negative_slope=0.2, inplace=True)
+    (11): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (12): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (13): LeakyReLU(negative_slope=0.2, inplace=True)
+  )
+  (classifier): Wass_Metric()
+)
+==================== The 0-th round ====================
+Test-(45): [50/250]	Time 0.046 (0.317)	Loss 0.892 (0.796)	Prec@1 66.667 (68.471)
+Test-(45): [100/250]	Time 0.044 (0.285)	Loss 0.562 (0.800)	Prec@1 78.667 (68.706)
+Test-(45): [150/250]	Time 0.042 (0.272)	Loss 0.735 (0.788)	Prec@1 73.333 (69.338)
+Test-(45): [200/250]	Time 0.050 (0.266)	Loss 1.001 (0.784)	Prec@1 58.667 (69.481)
+ * Prec@1 69.537 Best_prec1 69.924
+Test accuracy: 69.537338 h: 0.535444 
+
+==================== The 1-th round ====================
+Test-(45): [50/250]	Time 0.076 (0.298)	Loss 0.541 (0.763)	Prec@1 82.667 (70.523)
+Test-(45): [100/250]	Time 0.671 (0.277)	Loss 0.782 (0.764)	Prec@1 72.000 (70.429)
+Test-(45): [150/250]	Time 0.780 (0.271)	Loss 0.822 (0.764)	Prec@1 70.667 (70.417)
+Test-(45): [200/250]	Time 0.359 (0.265)	Loss 0.617 (0.767)	Prec@1 77.333 (70.428)
+ * Prec@1 70.111 Best_prec1 69.924
+Test accuracy: 70.110664 h: 0.484117 
+
+==================== The 2-th round ====================
+Test-(45): [50/250]	Time 0.440 (0.298)	Loss 0.711 (0.787)	Prec@1 73.333 (69.379)
+Test-(45): [100/250]	Time 0.050 (0.275)	Loss 1.198 (0.786)	Prec@1 57.333 (69.521)
+Test-(45): [150/250]	Time 0.047 (0.269)	Loss 0.942 (0.781)	Prec@1 65.333 (69.726)
+Test-(45): [200/250]	Time 0.043 (0.269)	Loss 0.804 (0.783)	Prec@1 68.000 (69.627)
+ * Prec@1 69.571 Best_prec1 69.924
+Test accuracy: 69.570671 h: 0.525671 
+
+==================== The 3-th round ====================
+Test-(45): [50/250]	Time 0.047 (0.295)	Loss 1.100 (0.769)	Prec@1 56.000 (70.203)
+Test-(45): [100/250]	Time 0.045 (0.280)	Loss 1.215 (0.780)	Prec@1 60.000 (69.723)
+Test-(45): [150/250]	Time 0.320 (0.269)	Loss 0.895 (0.781)	Prec@1 65.333 (69.832)
+Test-(45): [200/250]	Time 0.909 (0.268)	Loss 0.631 (0.778)	Prec@1 74.667 (69.954)
+ * Prec@1 69.893 Best_prec1 69.924
+Test accuracy: 69.893333 h: 0.510857 
+
+==================== The 4-th round ====================
+Test-(45): [50/250]	Time 0.049 (0.311)	Loss 0.718 (0.762)	Prec@1 70.667 (70.399)
+Test-(45): [100/250]	Time 0.044 (0.283)	Loss 1.033 (0.762)	Prec@1 62.667 (70.446)
+Test-(45): [150/250]	Time 0.043 (0.274)	Loss 1.011 (0.768)	Prec@1 56.000 (70.254)
+Test-(45): [200/250]	Time 1.675 (0.275)	Loss 0.776 (0.768)	Prec@1 70.667 (70.167)
+ * Prec@1 70.157 Best_prec1 69.924
+Test accuracy: 70.157333 h: 0.493628 
+
+Mean_accuracy: 69.853868 h: 0.509944
+===================================== Test is END =====================================
+

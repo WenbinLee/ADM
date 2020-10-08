@@ -35,7 +35,7 @@ cd ADM
 
 ### Datasets
 - [miniImageNet](https://www.dropbox.com/sh/6yd1ygtyc3yd981/AABVeEqzC08YQv4UZk7lNHvya?dl=0)(The used data splits can be seen ADM/dataset/miniImageNet). 
-- [tieredImageNet](https://www.dropbox.com/sh/6yd1ygtyc3yd981/AABVeEqzC08YQv4UZk7lNHvya?dl=0)(The used data splits can be seen ADM/dataset/tieredImageNet).
+- [tieredImageNet](https://www.dropbox.com/sh/6yd1ygtyc3yd981/AABVeEqzC08YQv4UZk7lNHvya?dl=0)(The used data splits can be seen ADM/dataset/tieredImageNet).<br> 
   Note that all the images need to be stored into a file named "images", and the data splits are stored into "train.csv", "val.csv" and "test.csv", respectively.
 
 

@@ -1,7 +1,15 @@
 # ADM in PyTorch
 
-We provide a PyTorch implementation of ADM for few-shot learning. If you use this code for your research, please cite: 
-
+We provide a PyTorch implementation of ADM for few-shot learning. 
+If you use this code for your research, please cite our paper.
+```
+@inproceedings{li2020ADM,
+  title={Asymmetric Distribution Measure for Few-shot Learning},
+  author={Li, Wenbin and Wang, Lei and Huo, Jing and Shi, Yinghuan and Gao, Yang and Luo, Jiebo},
+  booktitle={IJCAI},
+  year={2020}
+}
+```
 [Asymmetric Distribution Measure for Few-shot Learning](https://www.ijcai.org/Proceedings/2020/0409.pdf).<br> 
 [Wenbin Li](https://cs.nju.edu.cn/liwenbin/), Lei Wang, Jing Huo, Yinghuan Shi, Yang Gao and Jiebo Luo. In IJCAI 2020.<br> 
 <img src='imgs/Flowchart.bmp' width=600/>
@@ -26,8 +34,8 @@ cd ADM
 - Install [PyTorch](http://pytorch.org) 1.3 and other dependencies.
 
 ### Datasets
-- [miniImageNet](https://drive.google.com/file/d/1fUBrpv8iutYwdL4xE1rX_R9ef6tyncX9/view). 
-- [tieredImageNet](http://vision.stanford.edu/aditya86/ImageNetDogs/).
+- [miniImageNet](https://www.dropbox.com/sh/6yd1ygtyc3yd981/AABVeEqzC08YQv4UZk7lNHvya?dl=0). 
+- [tieredImageNet](https://www.dropbox.com/sh/6yd1ygtyc3yd981/AABVeEqzC08YQv4UZk7lNHvya?dl=0).
 
 
 ###  miniImageNet Few-shot Classification with Data Augmentation
